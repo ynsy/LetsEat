@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD46EC041A3BC0B2000C1868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD46EC031A3BC0B2000C1868 /* AppDelegate.swift */; };
+		FD46EC061A3BC0B2000C1868 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD46EC051A3BC0B2000C1868 /* ViewController.swift */; };
+		FD46EC091A3BC0B2000C1868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD46EC071A3BC0B2000C1868 /* Main.storyboard */; };
+		FD46EC0B1A3BC0B2000C1868 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD46EC0A1A3BC0B2000C1868 /* Images.xcassets */; };
+		FD46EC0E1A3BC0B2000C1868 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD46EC0C1A3BC0B2000C1868 /* LaunchScreen.xib */; };
+		FD46EC1A1A3BC0B3000C1868 /* LetsEatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD46EC191A3BC0B3000C1868 /* LetsEatTests.swift */; };
+		FD46EC241A3CD3E0000C1868 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD46EC231A3CD3E0000C1868 /* RegisterViewController.swift */; };
+		FD46EC261A3DED9C000C1868 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD46EC251A3DED9C000C1868 /* Profile.swift */; };
+		FD46EC281A3DF470000C1868 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD46EC271A3DF470000C1868 /* Message.swift */; };
+		FD46EC2A1A3DFC2F000C1868 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD46EC291A3DFC2F000C1868 /* User.swift */; };
+		FD46EC2C1A3DFC72000C1868 /* LetsEat.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD46EC2B1A3DFC72000C1868 /* LetsEat.swift */; };
+		FD46EC2E1A3DFCF6000C1868 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD46EC2D1A3DFCF6000C1868 /* UserViewController.swift */; };
+		FD46EC341A3E0300000C1868 /* FriendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD46EC331A3E0300000C1868 /* FriendListViewController.swift */; };
+		FDEE72251A3E0E31000DA71C /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE72241A3E0E31000DA71C /* TimeLineViewController.swift */; };
+		FDEE72271A3E11F8000DA71C /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE72261A3E11F8000DA71C /* NotificationsViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD46EC141A3BC0B3000C1868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD46EBF61A3BC0B2000C1868 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD46EBFD1A3BC0B2000C1868;
+			remoteInfo = LetsEat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD46EBFE1A3BC0B2000C1868 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD46EC021A3BC0B2000C1868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD46EC031A3BC0B2000C1868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD46EC051A3BC0B2000C1868 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD46EC081A3BC0B2000C1868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD46EC0A1A3BC0B2000C1868 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FD46EC0D1A3BC0B2000C1868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FD46EC131A3BC0B3000C1868 /* LetsEatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LetsEatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD46EC181A3BC0B3000C1868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD46EC191A3BC0B3000C1868 /* LetsEatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LetsEatTests.swift; sourceTree = "<group>"; };
+		FD46EC231A3CD3E0000C1868 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = ../RegisterViewController.swift; sourceTree = "<group>"; };
+		FD46EC251A3DED9C000C1868 /* Profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		FD46EC271A3DF470000C1868 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		FD46EC291A3DFC2F000C1868 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FD46EC2B1A3DFC72000C1868 /* LetsEat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsEat.swift; sourceTree = "<group>"; };
+		FD46EC2D1A3DFCF6000C1868 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		FD46EC331A3E0300000C1868 /* FriendListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendListViewController.swift; sourceTree = "<group>"; };
+		FDEE72241A3E0E31000DA71C /* TimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
+		FDEE72261A3E11F8000DA71C /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD46EBFB1A3BC0B2000C1868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD46EC101A3BC0B3000C1868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD46EBF51A3BC0B2000C1868 = {
+			isa = PBXGroup;
+			children = (
+				FD46EC001A3BC0B2000C1868 /* LetsEat */,
+				FD46EC161A3BC0B3000C1868 /* LetsEatTests */,
+				FD46EBFF1A3BC0B2000C1868 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD46EBFF1A3BC0B2000C1868 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD46EBFE1A3BC0B2000C1868 /* LetsEat.app */,
+				FD46EC131A3BC0B3000C1868 /* LetsEatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD46EC001A3BC0B2000C1868 /* LetsEat */ = {
+			isa = PBXGroup;
+			children = (
+				FD46EC031A3BC0B2000C1868 /* AppDelegate.swift */,
+				FD46EC051A3BC0B2000C1868 /* ViewController.swift */,
+				FD46EC071A3BC0B2000C1868 /* Main.storyboard */,
+				FD46EC0A1A3BC0B2000C1868 /* Images.xcassets */,
+				FD46EC0C1A3BC0B2000C1868 /* LaunchScreen.xib */,
+				FD46EC331A3E0300000C1868 /* FriendListViewController.swift */,
+				FD46EC011A3BC0B2000C1868 /* Supporting Files */,
+				FD46EC2D1A3DFCF6000C1868 /* UserViewController.swift */,
+				FDEE72261A3E11F8000DA71C /* NotificationsViewController.swift */,
+				FDEE72241A3E0E31000DA71C /* TimeLineViewController.swift */,
+			);
+			path = LetsEat;
+			sourceTree = "<group>";
+		};
+		FD46EC011A3BC0B2000C1868 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD46EC231A3CD3E0000C1868 /* RegisterViewController.swift */,
+				FD46EC021A3BC0B2000C1868 /* Info.plist */,
+				FD46EC251A3DED9C000C1868 /* Profile.swift */,
+				FD46EC291A3DFC2F000C1868 /* User.swift */,
+				FD46EC271A3DF470000C1868 /* Message.swift */,
+				FD46EC2B1A3DFC72000C1868 /* LetsEat.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD46EC161A3BC0B3000C1868 /* LetsEatTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD46EC191A3BC0B3000C1868 /* LetsEatTests.swift */,
+				FD46EC171A3BC0B3000C1868 /* Supporting Files */,
+			);
+			path = LetsEatTests;
+			sourceTree = "<group>";
+		};
+		FD46EC171A3BC0B3000C1868 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD46EC181A3BC0B3000C1868 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD46EBFD1A3BC0B2000C1868 /* LetsEat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD46EC1D1A3BC0B3000C1868 /* Build configuration list for PBXNativeTarget "LetsEat" */;
+			buildPhases = (
+				FD46EBFA1A3BC0B2000C1868 /* Sources */,
+				FD46EBFB1A3BC0B2000C1868 /* Frameworks */,
+				FD46EBFC1A3BC0B2000C1868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LetsEat;
+			productName = LetsEat;
+			productReference = FD46EBFE1A3BC0B2000C1868 /* LetsEat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD46EC121A3BC0B3000C1868 /* LetsEatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD46EC201A3BC0B3000C1868 /* Build configuration list for PBXNativeTarget "LetsEatTests" */;
+			buildPhases = (
+				FD46EC0F1A3BC0B3000C1868 /* Sources */,
+				FD46EC101A3BC0B3000C1868 /* Frameworks */,
+				FD46EC111A3BC0B3000C1868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD46EC151A3BC0B3000C1868 /* PBXTargetDependency */,
+			);
+			name = LetsEatTests;
+			productName = LetsEatTests;
+			productReference = FD46EC131A3BC0B3000C1868 /* LetsEatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD46EBF61A3BC0B2000C1868 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ynsy;
+				TargetAttributes = {
+					FD46EBFD1A3BC0B2000C1868 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					FD46EC121A3BC0B3000C1868 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = FD46EBFD1A3BC0B2000C1868;
+					};
+				};
+			};
+			buildConfigurationList = FD46EBF91A3BC0B2000C1868 /* Build configuration list for PBXProject "LetsEat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD46EBF51A3BC0B2000C1868;
+			productRefGroup = FD46EBFF1A3BC0B2000C1868 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD46EBFD1A3BC0B2000C1868 /* LetsEat */,
+				FD46EC121A3BC0B3000C1868 /* LetsEatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD46EBFC1A3BC0B2000C1868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD46EC091A3BC0B2000C1868 /* Main.storyboard in Resources */,
+				FD46EC0E1A3BC0B2000C1868 /* LaunchScreen.xib in Resources */,
+				FD46EC0B1A3BC0B2000C1868 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD46EC111A3BC0B3000C1868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD46EBFA1A3BC0B2000C1868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD46EC241A3CD3E0000C1868 /* RegisterViewController.swift in Sources */,
+				FD46EC2E1A3DFCF6000C1868 /* UserViewController.swift in Sources */,
+				FD46EC341A3E0300000C1868 /* FriendListViewController.swift in Sources */,
+				FDEE72251A3E0E31000DA71C /* TimeLineViewController.swift in Sources */,
+				FD46EC261A3DED9C000C1868 /* Profile.swift in Sources */,
+				FD46EC2A1A3DFC2F000C1868 /* User.swift in Sources */,
+				FD46EC281A3DF470000C1868 /* Message.swift in Sources */,
+				FD46EC061A3BC0B2000C1868 /* ViewController.swift in Sources */,
+				FDEE72271A3E11F8000DA71C /* NotificationsViewController.swift in Sources */,
+				FD46EC041A3BC0B2000C1868 /* AppDelegate.swift in Sources */,
+				FD46EC2C1A3DFC72000C1868 /* LetsEat.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD46EC0F1A3BC0B3000C1868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD46EC1A1A3BC0B3000C1868 /* LetsEatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD46EC151A3BC0B3000C1868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD46EBFD1A3BC0B2000C1868 /* LetsEat */;
+			targetProxy = FD46EC141A3BC0B3000C1868 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD46EC071A3BC0B2000C1868 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD46EC081A3BC0B2000C1868 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD46EC0C1A3BC0B2000C1868 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD46EC0D1A3BC0B2000C1868 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD46EC1B1A3BC0B3000C1868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD46EC1C1A3BC0B3000C1868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD46EC1E1A3BC0B3000C1868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LetsEat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FD46EC1F1A3BC0B3000C1868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LetsEat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FD46EC211A3BC0B3000C1868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LetsEatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetsEat.app/LetsEat";
+			};
+			name = Debug;
+		};
+		FD46EC221A3BC0B3000C1868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LetsEatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LetsEat.app/LetsEat";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD46EBF91A3BC0B2000C1868 /* Build configuration list for PBXProject "LetsEat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD46EC1B1A3BC0B3000C1868 /* Debug */,
+				FD46EC1C1A3BC0B3000C1868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD46EC1D1A3BC0B3000C1868 /* Build configuration list for PBXNativeTarget "LetsEat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD46EC1E1A3BC0B3000C1868 /* Debug */,
+				FD46EC1F1A3BC0B3000C1868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD46EC201A3BC0B3000C1868 /* Build configuration list for PBXNativeTarget "LetsEatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD46EC211A3BC0B3000C1868 /* Debug */,
+				FD46EC221A3BC0B3000C1868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD46EBF61A3BC0B2000C1868 /* Project object */;
+}
