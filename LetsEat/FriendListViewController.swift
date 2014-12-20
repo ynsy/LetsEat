@@ -31,12 +31,23 @@ class FriendListViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("FriendListCell") as UITableViewCell
-        let member = user.friendList[indexPath.item]
-        cell.textLabel.text = member.name + " " + member.surname
+        let friend = user.friendList[indexPath.item]
+        cell.textLabel.text = friend.name + " " + friend.surname
         
         return cell
     }
     
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.Delete){
+            
+            user.deleteFriend(indexPath.item)
+            self.tableView.reloadData()
+        }
+    }
+    
+    @IBAction func BackButtonTapped(sender: AnyObject) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
     
     
     

@@ -15,9 +15,9 @@ class LetsEat {
     var userList = [User]()
     var message = ["time": String(), "day": String(), "location": String()]
    
-    func searchFriend(userName: String){
+    func searchFriend(username: String){
         for user in userList {
-            if user.userName == userName {
+            if user.username == username {
                 println("\(user) found.")
             }else {
                 println("\(user) could not found.")

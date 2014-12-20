@@ -9,21 +9,36 @@
 class User {
     let name: String
     let surname: String
-    let userName: String
+    let username: String
     let phone: String
     var password: String
     var friendList = [User]()
     var eatInvitationList = [String]()
     var notifications = [String]()
     var timeLine = [[String: String]]()
-    var userList = [String]()
+    var userList = [User]()
     var message = ["time": String(), "day": String(), "location": String()]
     
-    init(name: String, surname: String, userName: String, password: String, phone: String) {
+    init(name: String, surname: String, username: String, password: String, phone: String) {
         self.name = name
         self.surname = surname
-        self.userName = userName
+        self.username = username
         self.phone = phone
         self.password = password
+    }
+
+    
+    
+    func addFriend(user: User) {
+        self.friendList.append(user)
+        user.friendList.append(self)
+    }
+    
+    func deleteFriend(index: Int){
+        self.friendList.removeAtIndex(index)
+    }
+    
+    func deleteNotification(index: Int){
+        self.notifications.removeAtIndex(index)
     }
 }

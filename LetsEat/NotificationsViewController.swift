@@ -10,6 +10,7 @@ import UIKit
 
 class NotificationsViewController: UITableViewController {
     let user: User!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,14 +30,24 @@ class NotificationsViewController: UITableViewController {
         return user.notifications.count
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
         let cell = tableView.dequeueReusableCellWithIdentifier("NotificationsCell") as UITableViewCell
         cell.textLabel.text = user.notifications[indexPath.item]
         
         return cell
     }
     
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.Delete){
+            user.deleteNotification(indexPath.item)
+            self.tableView.reloadData()
+        }
+    }
     
+    @IBAction func BackButtonTapped(sender: AnyObject) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
     
     
 }
