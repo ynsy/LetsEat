@@ -16,8 +16,8 @@ class User {
     var eatInvitationList = [String]()
     var notifications = [String]()
     var timeLine = [[String: String]]()
-    var userList = [User]()
     var message = ["time": String(), "day": String(), "location": String()]
+    var letsEat:LetsEat!
     
     init(name: String, surname: String, username: String, password: String, phone: String) {
         self.name = name
@@ -27,7 +27,15 @@ class User {
         self.password = password
     }
 
-    
+    func searchFriend(username: String){
+        for user in letsEat.userList {
+            if user.username == username {
+                println("\(user) found.")
+            }else {
+                println("\(user) could not found.")
+            }
+        }
+    }
     
     func addFriend(user: User) {
         self.friendList.append(user)

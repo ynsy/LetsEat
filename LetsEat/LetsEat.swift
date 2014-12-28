@@ -7,7 +7,6 @@
 //
 
 class LetsEat {
-    var friendList = [String]()
     //let pendingRequest: [String]
     var eatInvitationList = [String]()
     var notifications = [String]()
@@ -15,15 +14,7 @@ class LetsEat {
     var userList = [User]()
     var message = ["time": String(), "day": String(), "location": String()]
    
-    func searchFriend(username: String){
-        for user in userList {
-            if user.username == username {
-                println("\(user) found.")
-            }else {
-                println("\(user) could not found.")
-            }
-        }
-    }
+    
     
     func addUserToList(user: User){
         userList.append(user)

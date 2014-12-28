@@ -10,13 +10,11 @@ import UIKit
 
 class MainPanelViewController: UIViewController {
     var user: User!
-    //@IBOutlet weak var UsernameLabel: UILabel!
-    
+   // @IBOutlet weak var UsernameLabel: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //UsernameLabel.text = user.username
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -27,6 +25,8 @@ class MainPanelViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
+        //UsernameLabel.text = user.username
+
         let prefs = NSUserDefaults.standardUserDefaults()
         let isLoggedIn = prefs.integerForKey("ISLOGGEDIN")
         if (isLoggedIn == 1) {
@@ -38,7 +38,7 @@ class MainPanelViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
       
-        if segue.identifier == "NotificationsSegue" {
+       /* if segue.identifier == "NotificationsSegue" {
             let memberVC = segue.destinationViewController as NotificationsViewController
             memberVC.user = user
             
@@ -54,7 +54,7 @@ class MainPanelViewController: UIViewController {
         } else if segue.identifier == "ProfileSegue" {
             let memberVC = segue.destinationViewController as ProfileViewController
             memberVC.user = user
-        }
+        }*/
         
     }
     

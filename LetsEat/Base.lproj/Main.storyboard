@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wE4-Wv-ENv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bx2-Bd-4bq">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -418,7 +418,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ocY-zk-gii" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-73" y="40"/>
+            <point key="canvasLocation" x="-236" y="3"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="kiH-BB-gcu">
@@ -487,6 +487,7 @@
                                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="Done" id="XX2-BT-SeG">
                                             <connections>
                                                 <action selector="DoneButtonAction:" destination="bVy-7v-Bjg" id="ZFe-Iu-ho1"/>
+                                                <segue destination="bx2-Bd-4bq" kind="show" identifier="registerCompleteSegue" id="rsi-tE-2gL"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -533,7 +534,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sEd-aX-VKh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="157" y="92"/>
+            <point key="canvasLocation" x="221" y="-86"/>
         </scene>
         <!--Main Panel View Controller-->
         <scene sceneID="MKw-wW-6ng">
@@ -609,12 +610,6 @@
                                             <segue destination="f5l-dd-205" kind="show" identifier="FriendListSegue" id="7ZO-a9-N9u"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6M9-rL-Kb2">
-                                        <rect key="frame" x="139" y="24" width="42" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>

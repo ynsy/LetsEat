@@ -12,7 +12,7 @@ class Message {
     let location: String
     let withWhom: String
     
-    
+    				
     init(time: String, day: String, location: String, withWhom: String){
         self.time = time
         self.day = day
