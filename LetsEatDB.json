@@ -1,6 +1,6 @@
 
 [{
-		"0": {
+		"user": {
 			"first_name": "Brian",
 			"last_name": "Ramirez",
 			"username": "bramirez0",
@@ -38,7 +38,7 @@
 				}
 					}
 				},
-		"1": {
+		"user": {
 			"first_name": "Tammy",
 			"last_name": "Collins",
 			"username": "tcollins1",
@@ -76,7 +76,7 @@
 				}
 					}
 				},
-		"2": {
+		"user": {
 			"first_name": "Joan",
 			"last_name": "Robinson",
 			"username": "jrobinson2",
@@ -117,7 +117,7 @@
 				}
 					}
 				},
-		"3": {
+		"user": {
 			"first_name": "Emily",
 			"last_name": "Rice",
 			"username": "erice3",
@@ -155,7 +155,7 @@
 				}
 					}
 				},
-		"4": {
+		"user": {
 			"first_name": "Linda",
 			"last_name": "Armstrong",
 			"username": "larmstrong4",
@@ -193,7 +193,7 @@
 				}
 					}
 				},
-		"5": {
+		"user": {
 			"first_name": "John",
 			"last_name": "Edwards",
 			"username": "jedwards5",
@@ -231,7 +231,7 @@
 				}
 					}
 				},
-		"6": {
+		"user": {
 			"first_name": "Andrew",
 			"last_name": "Mitchell",
 			"username": "amitchell6",
@@ -269,7 +269,7 @@
 				}
 					}
 				},
-		"7": {
+		"user": {
 			"first_name": "Tina",
 			"last_name": "Gordon",
 			"username": "tgordon7",
@@ -307,7 +307,7 @@
 				}
 					}
 				},
-		"8": {
+		"user": {
 			"first_name": "Robert",
 			"last_name": "Nguyen",
 			"username": "rnguyen8",
@@ -345,7 +345,7 @@
 				}
 					}
 				},
-		"9": {
+		"user": {
 			"first_name": "Julia",
 			"last_name": "Parker",
 			"username": "jparker9",
