@@ -2,6 +2,14 @@
 //  RegisterViewController.swift
 //  LetsEat
 //
+//  Created by ynsy on 29/12/14.
+//  Copyright (c) 2014 ynsy. All rights reserved.
+//
+
+//
+//  RegisterViewController.swift
+//  LetsEat
+//
 //  Created by ynsy on 13/12/14.
 //  Copyright (c) 2014 ynsy. All rights reserved.
 //
@@ -26,11 +34,11 @@ class RegisterViewController: UIViewController {
         var password:NSString = PasswordTextField.text as NSString
         var phone:NSString = PhoneNumberTextField.text as NSString
         var newUser = User(name: NameTextField.text,
-                            surname: SurnameTextField.text,
-                            username: UsernameTextField.text,
-                            password: PasswordTextField.text,
-                            phone: PhoneNumberTextField.text)
-
+            surname: SurnameTextField.text,
+            username: UsernameTextField.text,
+            password: PasswordTextField.text,
+            phone: PhoneNumberTextField.text)
+        
         
         letsEat.addUserToList(newUser)
         
@@ -48,8 +56,8 @@ class RegisterViewController: UIViewController {
         
     }
     
-
-
+    
+    
     @IBAction func checkFields(sender: AnyObject) {
         if NameTextField.text != "" && SurnameTextField.text != "" && UsernameTextField.text != "" && PasswordTextField.text != "" && PhoneNumberTextField.text != "" {
             DoneButton.enabled = true
@@ -58,7 +66,7 @@ class RegisterViewController: UIViewController {
         }
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    
+        
         if segue.identifier == "registerCompleteSegue" {
             let memberVC = segue.destinationViewController as SignInViewController
             memberVC.user = user
@@ -79,4 +87,5 @@ class RegisterViewController: UIViewController {
     
     
 }
+
 
