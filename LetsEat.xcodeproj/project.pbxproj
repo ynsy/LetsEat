@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD002E431A58322E00D90E81 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD002E421A58322E00D90E81 /* json.swift */; };
 		FD46EC041A3BC0B2000C1868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD46EC031A3BC0B2000C1868 /* AppDelegate.swift */; };
 		FD46EC061A3BC0B2000C1868 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD46EC051A3BC0B2000C1868 /* ViewController.swift */; };
 		FD46EC091A3BC0B2000C1868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD46EC071A3BC0B2000C1868 /* Main.storyboard */; };
@@ -23,7 +24,6 @@
 		FD9940B51A41E88E00FE33F0 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9940B41A41E88E00FE33F0 /* AddFriendViewController.swift */; };
 		FD9940B71A41EBCE00FE33F0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9940B61A41EBCE00FE33F0 /* ProfileViewController.swift */; };
 		FD9940B91A42899C00FE33F0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9940B81A42899C00FE33F0 /* SignInViewController.swift */; };
-		FDB970E11A515061003842B5 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB970E01A515061003842B5 /* JSON.swift */; };
 		FDB970E31A5150EB003842B5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB970E21A5150EB003842B5 /* RegisterViewController.swift */; };
 		FDEE72251A3E0E31000DA71C /* TimeLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE72241A3E0E31000DA71C /* TimeLineViewController.swift */; };
 		FDEE72271A3E11F8000DA71C /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEE72261A3E11F8000DA71C /* NotificationsViewController.swift */; };
@@ -40,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD002E421A58322E00D90E81 /* json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = json.swift; sourceTree = "<group>"; };
 		FD46EBFE1A3BC0B2000C1868 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD46EC021A3BC0B2000C1868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD46EC031A3BC0B2000C1868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		FD9940B41A41E88E00FE33F0 /* AddFriendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
 		FD9940B61A41EBCE00FE33F0 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FD9940B81A42899C00FE33F0 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
-		FDB970E01A515061003842B5 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		FDB970E21A5150EB003842B5 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FDEE72241A3E0E31000DA71C /* TimeLineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeLineViewController.swift; sourceTree = "<group>"; };
 		FDEE72261A3E11F8000DA71C /* NotificationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +119,7 @@
 				FDEE72241A3E0E31000DA71C /* TimeLineViewController.swift */,
 				FD46EC331A3E0300000C1868 /* FriendListViewController.swift */,
 				FD9940B61A41EBCE00FE33F0 /* ProfileViewController.swift */,
+				FD002E421A58322E00D90E81 /* json.swift */,
 				FD9940B21A41E4AA00FE33F0 /* MainPanelViewController.swift */,
 			);
 			path = LetsEat;
@@ -132,7 +133,6 @@
 				FD46EC291A3DFC2F000C1868 /* User.swift */,
 				FD46EC271A3DF470000C1868 /* Message.swift */,
 				FD46EC2B1A3DFC72000C1868 /* LetsEat.swift */,
-				FDB970E01A515061003842B5 /* JSON.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -269,7 +269,7 @@
 				FD46EC041A3BC0B2000C1868 /* AppDelegate.swift in Sources */,
 				FD46EC2C1A3DFC72000C1868 /* LetsEat.swift in Sources */,
 				FD9940B51A41E88E00FE33F0 /* AddFriendViewController.swift in Sources */,
-				FDB970E11A515061003842B5 /* JSON.swift in Sources */,
+				FD002E431A58322E00D90E81 /* json.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

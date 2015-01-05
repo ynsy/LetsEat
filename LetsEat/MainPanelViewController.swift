@@ -23,7 +23,7 @@ class MainPanelViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidAppear(animated: Bool) {
+    /*override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         //UsernameLabel.text = user.username
 
@@ -34,7 +34,7 @@ class MainPanelViewController: UIViewController {
             self.reloadInputViews()
             self.performSegueWithIdentifier("ProfileSegue", sender: self)
         }
-    }
+    }*/
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
       

@@ -37,7 +37,10 @@ class RegisterViewController: UIViewController {
             surname: SurnameTextField.text,
             username: UsernameTextField.text,
             password: PasswordTextField.text,
-            phone: PhoneNumberTextField.text)
+            phone: PhoneNumberTextField.text,
+            friendList: [],
+            messages: [""]
+            )
         
         
         letsEat.addUserToList(newUser)

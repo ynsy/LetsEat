@@ -12,19 +12,22 @@ class User {
     let username: String
     let phone: String
     var password: String
-    var friendList = [User]()
+    var friendList = [AnyObject]()
     var eatInvitationList = [String]()
     var notifications = [String]()
     var timeLine = [[String: String]]()
-    var message = ["time": String(), "day": String(), "location": String()]
+    //var messages = ["time": String(), "day": String(), "location": String()]
+    var messages = [AnyObject]()
     var letsEat:LetsEat!
     
-    init(name: String, surname: String, username: String, password: String, phone: String) {
+    init(name: String, surname: String, username: String, password: String, phone: String, friendList: [AnyObject],messages: [AnyObject] ) {
         self.name = name
         self.surname = surname
         self.username = username
         self.phone = phone
         self.password = password
+        self.messages = messages
+        self.friendList = friendList
     }
 
     func searchFriend(username: String){
@@ -38,8 +41,8 @@ class User {
     }
     
     func addFriend(user: User) {
-        self.friendList.append(user)
-        user.friendList.append(self)
+        //self.friendList.append(user)
+        //user.friendList.append(self)
     }
     
     func deleteFriend(index: Int){
