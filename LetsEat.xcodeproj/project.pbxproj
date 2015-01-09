@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7990E8F1A62ABC6005DAD9F /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7990E8E1A62ABC6005DAD9F /* UserManager.swift */; };
+		D7990E911A62AF33005DAD9F /* LetsEatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7990E901A62AF33005DAD9F /* LetsEatManager.swift */; };
+		D7990E931A62B462005DAD9F /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7990E921A62B462005DAD9F /* MessageViewController.swift */; };
+		D7990E951A62E2A9005DAD9F /* AddFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7990E941A62E2A9005DAD9F /* AddFriendVC.swift */; };
 		FD002E431A58322E00D90E81 /* json.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD002E421A58322E00D90E81 /* json.swift */; };
 		FD46EC041A3BC0B2000C1868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD46EC031A3BC0B2000C1868 /* AppDelegate.swift */; };
 		FD46EC061A3BC0B2000C1868 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD46EC051A3BC0B2000C1868 /* ViewController.swift */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D7990E8E1A62ABC6005DAD9F /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		D7990E901A62AF33005DAD9F /* LetsEatManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LetsEatManager.swift; sourceTree = "<group>"; };
+		D7990E921A62B462005DAD9F /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		D7990E941A62E2A9005DAD9F /* AddFriendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFriendVC.swift; sourceTree = "<group>"; };
 		FD002E421A58322E00D90E81 /* json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = json.swift; sourceTree = "<group>"; };
 		FD46EBFE1A3BC0B2000C1868 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD46EC021A3BC0B2000C1868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,7 +128,11 @@
 				FD46EC331A3E0300000C1868 /* FriendListViewController.swift */,
 				FD9940B61A41EBCE00FE33F0 /* ProfileViewController.swift */,
 				FD002E421A58322E00D90E81 /* json.swift */,
+				D7990E901A62AF33005DAD9F /* LetsEatManager.swift */,
+				D7990E921A62B462005DAD9F /* MessageViewController.swift */,
 				FD9940B21A41E4AA00FE33F0 /* MainPanelViewController.swift */,
+				D7990E941A62E2A9005DAD9F /* AddFriendVC.swift */,
+				D7990E8E1A62ABC6005DAD9F /* UserManager.swift */,
 			);
 			path = LetsEat;
 			sourceTree = "<group>";
@@ -260,6 +272,7 @@
 				FD9940B71A41EBCE00FE33F0 /* ProfileViewController.swift in Sources */,
 				FD46EC261A3DED9C000C1868 /* Profile.swift in Sources */,
 				FD46EC2A1A3DFC2F000C1868 /* User.swift in Sources */,
+				D7990E951A62E2A9005DAD9F /* AddFriendVC.swift in Sources */,
 				FD46EC281A3DF470000C1868 /* Message.swift in Sources */,
 				FD9940B91A42899C00FE33F0 /* SignInViewController.swift in Sources */,
 				FD46EC061A3BC0B2000C1868 /* ViewController.swift in Sources */,
@@ -268,8 +281,11 @@
 				FDB970E31A5150EB003842B5 /* RegisterViewController.swift in Sources */,
 				FD46EC041A3BC0B2000C1868 /* AppDelegate.swift in Sources */,
 				FD46EC2C1A3DFC72000C1868 /* LetsEat.swift in Sources */,
+				D7990E931A62B462005DAD9F /* MessageViewController.swift in Sources */,
 				FD9940B51A41E88E00FE33F0 /* AddFriendViewController.swift in Sources */,
 				FD002E431A58322E00D90E81 /* json.swift in Sources */,
+				D7990E911A62AF33005DAD9F /* LetsEatManager.swift in Sources */,
+				D7990E8F1A62ABC6005DAD9F /* UserManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

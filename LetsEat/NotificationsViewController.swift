@@ -9,7 +9,8 @@
 import UIKit
 
 class NotificationsViewController: UITableViewController {
-    let user: User!
+    var user = UserManager.sharedInstance.user!
+    var letsEat = LetsEatManager.sharedInstance.letsEat!
     
     override func viewDidLoad() {
         super.viewDidLoad()

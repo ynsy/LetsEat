@@ -20,7 +20,7 @@ class SignInViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = "https://encodable.com/uploaddemo/files/LetsEatDB.json"
+        let url = "http://yunusy.com/wp-admin/LetsEatDB.json"
         if let nsurl = NSURL(string: url){
             println("link OK ")
             if let nsdata = NSData(contentsOfURL: nsurl){
@@ -50,9 +50,18 @@ class SignInViewController: UIViewController {
                                 }
                             }
                         }
+                    LetsEatManager.sharedInstance.letsEat = letsEat
                     }
                 }
             }
+    }
+    
+    func setUser(username: String){
+        for u in letsEat.userList {
+            if u.username == username {
+                UserManager.sharedInstance.user = u
+            }
+        }
     }
     
     @IBAction func SignInButtonTapped(sender: AnyObject) {
@@ -72,6 +81,7 @@ class SignInViewController: UIViewController {
             if (checkUserAndPassword(username, password: password)) {
                     var alertView:UIAlertView = UIAlertView()
                     alertView.title = "Sign in Successfull!"
+                    setUser(username)
                     alertView.delegate = self
                     alertView.addButtonWithTitle("OK")
                     alertView.show()
@@ -104,13 +114,16 @@ func checkUserAndPassword(username: String, password: String) -> BooleanType {
     }
     return false
 }
+    
+    
 
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "SignInSegue" && signChecker {
             let memberVC = segue.destinationViewController as MainPanelViewController
-            memberVC.user = user
+            //memberVC.user = user
+            //memberVC.letsEat = letsEat
             
         } 
   }

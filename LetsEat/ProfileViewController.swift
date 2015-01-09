@@ -14,18 +14,19 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var SurnameLabel: UILabel!
     @IBOutlet weak var UsernameLabel: UILabel!
     @IBOutlet weak var PhoneLabel: UILabel!
-    var user:User!
+    var user = UserManager.sharedInstance.user!
+    var letsEat = LetsEatManager.sharedInstance.letsEat!
     
     @IBAction func BackButtonTapped(sender: AnyObject) {
-        self.navigationController?.popToRootViewControllerAnimated(true)
+        //self.navigationController?.popToRootViewControllerAnimated(true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        NameLabel.text = user.name
-        SurnameLabel.text = user.surname
-        UsernameLabel.text = user.username
-        PhoneLabel.text = user.phone
+        NameLabel.text =     "Name    : " + user.name
+        SurnameLabel.text =  "Surname : " + user.surname
+        UsernameLabel.text = "Username: " + user.username
+        PhoneLabel.text =    "Phone   : " + user.phone
         
         // Do any additional setup after loading the view, typically from a nib.
     }

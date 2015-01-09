@@ -9,43 +9,25 @@
 import UIKit
 
 class FriendListViewController: UITableViewController {
-    let user: User!
-    var json: [NSDictionary]!
+    var user = UserManager.sharedInstance.user!
+    var letsEat = LetsEatManager.sharedInstance.letsEat!
+    var json: AnyObject!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       /*let url = "https://encodable.com/uploaddemo/files/LetsEatDB.json"
-        if let nsurl = NSURL(string: url){
-            if let nsdata = NSData(contentsOfURL: nsurl){
-                json = NSJSONSerialization.JSONObjectWithData(nsdata, options: NSJSONReadingOptions.AllowFragments, error: nil) as [[String: NSArray]]
-               
-                
-            }
-        }*/
-        //let url = "/Users/ynsy/Desktop/LetsEat/LetsEatDB.json"
-        let url = "https://encodable.com/uploaddemo/files/LetsEatDB.json"
-        if let nsurl = NSURL(string: url){
-            println("link OK")
-            if let nsdata = NSData(contentsOfURL: nsurl){
-                println("data Ok")
-                let json = JSON(data: nsdata)
-                for var i = 0; i < 3; i++ {
-                    let friend = json[0]["Friends"][i].asString
-                    println(friend)
-                }
-            }
-        }
-            }
+        
+    }
+
     
-    /*func findId() -> Int{
+    func findId() -> Int{
         for var i=0; i<json.count; i++ {
-            if self.user.username == json[i]["username"] {
+            if self.user.username == (json as NSArray)[i]["username"] as? NSString {
                 return i
             }
         }
         return -1
     }
-    */
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -57,22 +39,25 @@ class FriendListViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //return user.friendList.count
-        //let friendList = json[0]["Friends"].arrayValue
-        return 5
+        println("count ", user.friendList.count)
+        return user.friendList.count
+    }
+    
+    func retrieveUserData(username: String) -> User!{
+        for u in letsEat.userList {
+            if u.username == username {
+                return u
+            }
+        }
+        // it is some joke :)
+        return nil
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        /*let cell = tableView.dequeueReusableCellWithIdentifier("FriendListCell") as UITableViewCell
-        let friend = user.friendList[indexPath.item]
+        let cell = tableView.dequeueReusableCellWithIdentifier("FriendCell") as UITableViewCell
+        let friend = retrieveUserData(user.friendList[indexPath.item] as NSString)
         cell.textLabel.text = friend.name + " " + friend.surname
-        
-        return cell*/
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier("FriendListCell") as UITableViewCell
-        //let friend = json[0]["Friends"][indexPath.item]
-        //cell.textLabel.text = friend.stringValue
-        
+        println(friend.name)
         return cell
     }
     
@@ -88,16 +73,25 @@ class FriendListViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if (editingStyle == UITableViewCellEditingStyle.Delete){
-            
             user.deleteFriend(indexPath.item)
             self.tableView.reloadData()
         }
     }
     
-    @IBAction func BackButtonTapped(sender: AnyObject) {
-        self.navigationController?.popToRootViewControllerAnimated(true)
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "eatInvitationSegue"{
+        let cell = sender as UITableViewCell
+        let indexPath = tableView.indexPathForCell(cell)
+        let whom = user.friendList[indexPath!.item] as NSString
+        let departmentVC = segue.destinationViewController as MessageViewController
+        departmentVC.withWhom = retrieveUserData(whom)
+        }
     }
     
+   /* @IBAction func BackButtonTapped(sender: AnyObject) {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
+    */
     
     
 }

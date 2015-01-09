@@ -9,12 +9,16 @@
 import UIKit
 
 class MainPanelViewController: UIViewController {
-    var user: User!
+    var user = UserManager.sharedInstance.user!
+    var letsEat = LetsEatManager.sharedInstance.letsEat!
    // @IBOutlet weak var UsernameLabel: UILabel!
     
+    @IBOutlet weak var LabelUser: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        LabelUser.text = "\(user.name)\'s Main Panel"
+        println(user.friendList[0])
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -38,23 +42,27 @@ class MainPanelViewController: UIViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
       
-       /* if segue.identifier == "NotificationsSegue" {
+        if segue.identifier == "NotificationsSegue" {
             let memberVC = segue.destinationViewController as NotificationsViewController
-            memberVC.user = user
-            
+            //memberVC.user = user
+            //memberVC.letsEat = letsEat
         } else if segue.identifier == "FriendListSegue" {
-            let memberVC = segue.destinationViewController as FriendListViewController
-            memberVC.user = user
+            //let memberVC = segue.destinationViewController as FriendListViewController
+            //memberVC.user = user
+            //memberVC.letsEat = letsEat
         } else if segue.identifier == "TimeLineSegue" {
             let memberVC = segue.destinationViewController as TimeLineViewController
-            memberVC.user = user
+            //memberVC.user = user
+            //memberVC.letsEat = letsEat
         } else if segue.identifier == "AddFriendSegue" {
             let memberVC = segue.destinationViewController as AddFriendViewController
-            memberVC.user = user
+            //memberVC.user = user
+            //memberVC.letsEat = letsEat
         } else if segue.identifier == "ProfileSegue" {
-            let memberVC = segue.destinationViewController as ProfileViewController
-            memberVC.user = user
-        }*/
+            //let memberVC = segue.destinationViewController as ProfileViewController
+            //memberVC.user = user
+            //memberVC.letsEat = letsEat
+        }
         
     }
     
